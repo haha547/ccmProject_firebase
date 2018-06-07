@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Login</title>
+        <link rel = "stylesheet" type="text/css" href="style.css">
+        <link rel = "Icon" href = "title.png"/>
+</head>
+
+<body>
+	<div id="login_div" class="loginbox">
+		<img src="title.png" class="avatar">
+		<h1>精湛光學機台資訊系統</h1>
+			<p>電子信箱</p>
+			<input type="text" placeholder="輸入你的電子信箱" id="email_field">
+			<p>密碼</p>
+			<input type="password" placeholder="輸入你的密碼" id="password_field">
+			<button onclick="login()">登入</button>
+			<a href="#">Lost your password?</a><br>
+			<a href="#">Don't have an account?</a>	
+	</div>
+    
+    <div id="user_div" class="loggined-div">
+        <h3>Welcome User</h3>
+        <p id="user_para">Welcome to Myweb. You're currently logged in.</p>
+        <button onclick="logout()">Logout</button>   
+        <div>
+            
+        </div>
+    </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+        var config = {
+           apiKey: "AIzaSyBa1opQ3k_aULxrTn9Tvp3kNva6ryIMkZ4",
+            authDomain: "ccmproject-b499c.firebaseapp.com",
+            databaseURL: "https://ccmproject-b499c.firebaseio.com",
+            projectId: "ccmproject-b499c",
+            storageBucket: "ccmproject-b499c.appspot.com",
+            messagingSenderId: "724127457400"
+        };
+  firebase.initializeApp(config);
+    </script>
+    <script src="login.js"></script>
+</body>
+</html>

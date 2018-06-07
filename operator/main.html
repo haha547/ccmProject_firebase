@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>  
+    <head>
+        <meta charset="utf-8">
+        <title>Operator</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="../title.png">
+    </head>
+    <body>
+        <div class="welcome">
+            <p id="user_name" style="white-space:nowrap">歡迎使用者 Admin</p>
+            <button id="logout_btn" onclick="logout()">Logout</button>            
+        </div>
+        <pre id="object"></pre>
+        <div class="card">
+  <!--  不影響結構  -->
+            <div class="product-bg"></div>
+            <div  class="tag-wrap">
+                <div id="st_sensorWorkingOrNot" class="tag">故障</div>
+            </div>
+
+      <!--  主要結構  -->
+            <div class="card-block">
+                <div class="card-header">
+                    <h1>3號機</h1>
+                    <h2>操作員：張三</h2>
+                </div>
+                <div class="card-body">
+                  <div>
+                    <p>
+                        位置：金門大學綜合大樓321<br>
+                        內孔直徑檢測、內孔雜質檢測、焊點大小及個數檢測、有無牙檢測、對邊對角檢測、各台階尺寸檢測、牙傷檢測。
+                    </p>  
+                  </div>
+                </div>
+                <div class="card-footer">
+                    <p>請檢查：馬達、原料</p>
+                        <a href="#" class="btn">回報問題</a>
+                </div>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+        <script src="getdata.js"></script>
+        <script src="logout.js"></script>
+    </body>
+</html>

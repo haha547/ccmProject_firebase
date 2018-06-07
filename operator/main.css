@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(165deg, white, white 50%, #8bc34a 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+
+.welcome{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: inline;
+}
+
+.welcome p{
+    font-size: 12px;
+    display: inline;
+}
+
+#logout_btn{
+    position: relative;
+    background-color: #4a4a4a;
+    color: white;
+    display: inline;
+}
+
+.card {
+  background-color: #fff;
+  padding: 15px;
+  width: 600px;
+  height: 370px;
+  color: #4a4a4a;
+  box-shadow: 0 2px 23px rgba(93, 71, 4, .16);
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.product-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 200px;
+  background-image: url(https://i.imgur.com/ELhSQrC.jpg);
+  background-size: 867px 578px;
+  background-position: -476px -100px;
+  clip-path: polygon(0 0, 280px 0, 370px 100%, 0% 100%);
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+h2 {
+  font-weight: bolder;
+}
+.card-block {
+  position: relative;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+.card-block .card-body {
+  margin-top: 15px;
+}
+.card-block .card-footer {
+  margin-top: auto;
+}
+.btn {
+  background-color: #4a4a4a;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+.btn:hover, .btn:focus {
+  background-color: #ff4081;
+}
+.tag-wrap {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  overflow: hidden;
+  width: 160px;
+  height: 160px;
+}
+.tag-wrap .tag {
+  position: relative;
+  width: 160px;
+  background-color: #f44336;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  text-align: center;
+  margin-top: -10px;
+  color: white;
+  transform: translateX(50%) rotate(45deg) translateY(150%);
+}
+.tag-wrap .tag:before, .tag-wrap .tag:after {
+  content: "";
+  position: absolute;
+  border: 5px solid transparent;
+}
+.tag-wrap .tag:before {
+  border-top-color: #9B524D;
+  bottom: -10px;
+  left: 6px;
+}
+.tag-wrap .tag:after {
+  border-top-color: #9B524D;
+  bottom: -10px;
+  right: 14px;
+}

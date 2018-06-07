@@ -1,0 +1,23 @@
+body{
+	background: url(Background.png);
+}
+
+div{
+	
+}
+
+#op_machine{
+	width: 580px;
+	height: 580px;
+	padding: 50px 50px;
+	
+}
+
+#op_ood{
+	width: 300px;
+	height: 100px;
+	padding: 50px 50px;
+	margin-bottom: 480px;
+	margin-left: 240px;
+	
+}
