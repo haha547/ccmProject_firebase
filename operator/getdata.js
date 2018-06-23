@@ -26,20 +26,36 @@
                     if (doc && doc.exists) 
                     {
                         const myData = doc.data();
-                        if(myData.st_sensorWorkingOrNot === true)
+                        
+                        if(myData.ConveyorSensorWorkingOrNot && myData.MotorSensorWorkingOrNot && myData.VibratorSensorWorkingOrNot === true)
                         {
-                            document.getElementById("st_sensorWorkingOrNot").style.backgroundColor = "#8bc34a";
-                            document.getElementById("st_sensorWorkingOrNot").innerHTML = "運作"
+                            document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#8bc34a";
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "運作"
                             console.log("true");
                         } 
-                        else 
+                       else //if (myData.ConveyorSensorWorkingOrNot === false && myData.MotorSensorWorkingOrNot === true && myData.VibratorSensorWorkingOrNot === true)
                         {
-                            document.getElementById("st_sensorWorkingOrNot").style.backgroundColor = "#f44336";
-                            document.getElementById("st_sensorWorkingOrNot").innerHTML = "故障"
+                            document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
+                            
                             console.log("false");
                         }
+                        /*else if (myData.MotorSensorWorkingOrNot === false && myData.ConveyorSensorWorkingOrNot && myData.VibratorSensorWorkingOrNot === true)
+                        {
+                            document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
+                            window.alert("Motor's sensor Error!!")
+                            console.log("false"); 
+                        }
+                        else if (myData.VibratorSensorWorkingOrNot === false && myData.MotorSensorWorkingOrNot && myData.ConveyorSensorWorkingOrNot === true)
+                        {
+                            document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
+                            window.alert("Vibrator's sensor Error!!")
+                            console.log("false");
+                        }*/
                     }
                 });
             }
             getRealtimeUpdates();
-}());
+}());  
