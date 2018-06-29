@@ -37,36 +37,28 @@
                         else if(myData.ConveyorSensorWorkingOrNot === false && myData.MotorSensorWorkingOrNot === true && myData.VibratorSensorWorkingOrNot === true)
                         {
                             document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
-                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
-                            var str = "Motor Error!!";
-                            var result = str.link("https://www.w3schools.com");
-                            document.getElementById("errorOrNot").innerHTML = "輸送帶需要檢修"
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"                            
+                            document.getElementById("errorOrNot").innerHTML = "輸送帶需要檢修"    
                             console.log("false");
                         }
                         else if(myData.ConveyorSensorWorkingOrNot === true && myData.MotorSensorWorkingOrNot === false && myData.VibratorSensorWorkingOrNot === true)
                         {
                             document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
-                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
-                            var str = "Motor Error!!";
-                            var result = str.link("https://www.w3schools.com");
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"                                 
                             document.getElementById("errorOrNot").innerHTML = "馬達需要檢修"
                             console.log("false");
                         }
                         else if(myData.ConveyorSensorWorkingOrNot === true && myData.MotorSensorWorkingOrNot === true && myData.VibratorSensorWorkingOrNot === false)
                         {
                             document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
-                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
-                            var str = "Motor Error!!";
-                            var result = str.link("https://www.w3schools.com");
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"                           
                             document.getElementById("errorOrNot").innerHTML = "震動器需要檢修"
                             console.log("false");
                         }
                         else if(myData.ConveyorSensorWorkingOrNot === false && myData.MotorSensorWorkingOrNot === false && myData.VibratorSensorWorkingOrNot === true)
                         {
                             document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
-                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
-                            var str = "Motor Error!!";
-                            var result = str.link("https://www.w3schools.com");
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"     
                             document.getElementById("errorOrNot").innerHTML = "輸送帶、馬達需要檢修"
                             console.log("false");
                         }
@@ -74,26 +66,20 @@
                         {
                             document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
                             document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
-                            var str = "Motor Error!!";
-                            var result = str.link("https://www.w3schools.com");
                             document.getElementById("errorOrNot").innerHTML = "輸送帶、震動器需要檢修"
                             console.log("false");
                         }
                         else if(myData.ConveyorSensorWorkingOrNot === true && myData.MotorSensorWorkingOrNot === false && myData.VibratorSensorWorkingOrNot === false)
                         {
                             document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
-                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
-                            var str = "Motor Error!!";
-                            var result = str.link("https://www.w3schools.com");
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"     
                             document.getElementById("errorOrNot").innerHTML = "馬達、震動器需要檢修"
                             console.log("false");
                         }
                         else 
                         {
                             document.getElementById("sensorWorkingOrNot").style.backgroundColor = "#f44336";
-                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"
-                            var str = "Motor Error!!";
-                            var result = str.link("https://www.w3schools.com");
+                            document.getElementById("sensorWorkingOrNot").innerHTML = "故障"  
                             document.getElementById("errorOrNot").innerHTML = "馬達、輸送帶、震動器檢修"
                             console.log("false");
                         }
