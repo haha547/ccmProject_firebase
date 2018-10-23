@@ -52,7 +52,7 @@ body {
   background-image: url(https://i.imgur.com/ELhSQrC.jpg);
   background-size: 867px 578px;
   background-position: -476px -100px;
-  clip-path: polygon(0 0, 280px 0, 370px 100%, 0% 100%);
+  -webkit-clip-path: polygon(0 0, 280px 0, 370px 100%, 0% 100%);
 }
 h1 {
   font-size: 2rem;
